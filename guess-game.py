@@ -1,8 +1,13 @@
 import random
 
+print('猜數字遊戲')
 x = random.randint(1, 50)
+<<<<<<< HEAD
 # print(x)
 
+=======
+#print(x)
+>>>>>>> f3ddff10c3f45303ecaee0b0bc1d27dea028f59e
 for i in range(5):
     bingo = False
     while True:
@@ -24,7 +29,7 @@ for i in range(5):
 
     if bingo:
         break
-
+        
 if bingo:
     print('恭喜過關!')
 else:
