@@ -20,8 +20,7 @@ for i in range(5):
                 print('猜低一點~')
 
             break
-
-        except Exception as e:
+        except:
             print('請輸入數字')
 
     if bingo:
