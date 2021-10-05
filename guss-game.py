@@ -9,4 +9,9 @@ for i in range(5):
         print('猜對了!')
         break
 
-    print('猜錯了@@~')
+    if x > y:
+        print('猜高一點~')
+    else:
+        print('猜低一點~')
+
+print(f'答案為{x}')
