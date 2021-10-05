@@ -1,18 +1,16 @@
 import random
 
 print('猜數字遊戲')
-x = random.randint(1, 50)
-<<<<<<< HEAD
+start = int(input('start:'))
+end = int(input('end:'))
+count = int(input('count:'))
+x = random.randint(start, end)
 # print(x)
-
-=======
-#print(x)
->>>>>>> f3ddff10c3f45303ecaee0b0bc1d27dea028f59e
-for i in range(5):
+for i in range(count):
     bingo = False
     while True:
         try:
-            y = int(input(f'第{i+1}/{5}次 請猜數字(1~50):'))
+            y = int(input(f'第{i+1}/{count}次 請猜數字({start}~{end}):'))
             if x == y:
                 print('猜對了!')
                 bingo = True
@@ -29,7 +27,7 @@ for i in range(5):
 
     if bingo:
         break
-        
+
 if bingo:
     print('恭喜過關!')
 else:
